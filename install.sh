@@ -6,3 +6,5 @@ pacman -S doas
 echo "Enter a password for the user:\n"
 passwd $USER
 echo "permit $USER as root" > /etc/doas.conf
+echo "Run the user.sh script."
+su $USER
